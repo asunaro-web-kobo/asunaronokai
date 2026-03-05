@@ -4,17 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>あすなろの会</title>
-  <meta name="description" content="あすなろの会は、難病の子供と家族、医療者が共に支え合う支援グループです。サマーキャンプや交流イベントを通じて、安心とつながりを届けます。">
+  <title>あすなろCafe</title>
+  <meta name="description" content="美味しいスイーツとこだわりのコーヒーでくつろぎのひと時を過ごすカフェ">
 
   <!-- リセットCSS -->
   <!-- reset.css -->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-
-  <!-- スタイルシート -->
-  <!-- slick css -->
-  <!-- <link rel="stylesheet" href="slick/slick.css">
-  <link rel="stylesheet" href="slick/slick-theme.css"> -->
 
   <!-- オリジナルCSS -->
   <link rel="stylesheet" href="style.css">
@@ -23,272 +18,115 @@
 </head>
 
 <body>
-  <header class="header01">
-    <input id="nav-input" type="checkbox" class="nav-hidden">
+  <header class="site-header">
+    <div class="logo">Cafe Demo</div>
 
-    <label id="menu-btn" for="nav-input">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+    <!-- ハンバーガー -->
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
 
-    <!-- <div class="logo"><img src="#" alt="#"></div> -->
-    <p class="header-logo text-large">あすなろの会</p>
-    <nav class="nav">
-      <ul class="item">
-        <li class="list"><a href="index.html">Home</a></li>
-        <li class="list"><a href="#works">活動の紹介</a></li>
-        <li class="list"><a href="#voice">参加者の声</a></li>
-        <li class="list"><a href="#faq">よくある質問</a></li>
-        <li class="list"><a href="#howtojoin">参加方法</a></li>
-        <li class="list-contact"><a href="#contact">お問い合わせ</a></li>
-      </ul>
+    <nav class="nav-menu" id="nav-menu">
+      <a href="#concept">コンセプト</a>
+      <a href="#menu">メニュー</a>
+      <a href="#gallery">ギャラリー</a>
+      <a href="#info">店舗情報</a>
     </nav>
   </header>
-  <main>
-    <div class="fv-img-wrapper">
-      <img class="fv-img" src="images/fv-img.webp" alt="あすなろの会イメージ画像" />
-      <div class="fv-catch">
-        <p class="text-large">つながる<br>支え合う</p>
-        <!-- <p class="text-medium">catch copy</p> -->
-      </div>
+
+  <section class="hero">
+    <div class="carousel">
+      <div class="slide"><img src="images/hero-images/shop-exterior.jpg" alt="外観"></div>
+      <div class="slide"><img src="images/hero-images/cafe-interior.jpg" alt="内観"></div>
+      <div class="slide"><img src="images/hero-images/hero-img-food.jpg" alt="カフェの食事"></div>
     </div>
+    <h1 class="catch">気軽に立ち寄れる、ヨーロッパの小さなカフェ</h1>
+  </section>
 
-    <!-- コンテンツ -->
-    <div class="contents-wrapper">
-      <!-- １カラムのセクション -->
-      <section id="about">
-        <div class="content">
-          <h2>あすなろの会とは</h2>
-          <div class="text-align-left">
-            <p>あすなろの会は、難病の子供の患者とそのご家族を支援するボランティアグループです。</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 活動紹介 -->
-      <section id="works">
-        <div class="content">
-          <h2>
-            活動紹介
-          </h2>
-          <div class="cards-container">
-            <div class="card">
-              <h3 class="card-title">サマーキャンプ</h3>
-              <div class="img">
-                <img src="images/image 1.webp" alt="サマーキャンプの様子">
-              </div>
-              <div class="card-textbox text-align-left">
-                <p>林間学校で子供たちとサマーキャンプをします。<br>一緒にアウトドアを楽しみ、食事を作ったり、病気についての勉強会をしたり、楽しく充実した２日間を過ごします。<br>キャンプには看護師も帯同します。
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <h3 class="card-title">クリスマス会</h3>
-              <div class="img">
-                <img src="images/image 2.webp" alt="クリスマス会の様子">
-              </div>
-              <div class="card-textbox text-align-left">
-                <p>毎年恒例のクリスマス会。<br>楽しいレクリエーションやお楽しみ抽選会、最後はみんなでレクリエーションをしてクリスマスケーキをいただきます。<br>医療スタッフがいますので安心して参加できます。</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <h3 class="card-title">家族のための懇談会</h3>
-              <div class="img">
-                <img src="images/image 3.webp" alt="懇談会の様子">
-              </div>
-              <div class="card-textbox text-align-left">
-                <p>難病の子供を支える家族間で、サポートの専門スタッフを交えて情報交換を行います。<br>日常の細かな悩みも、経験豊富なスタッフやご家族からのアドバイスで気持ちが軽くなることもあります。</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 参加者の声 -->
-      <section id="voice">
-        <h2>参加者の声</h2>
-        <div class="content">
-          <div class="comment-box">
-            <h3>Aさん</h3>
-            <div class="text-align-left">
-              <p>
-                コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。 </p>
-            </div>
-          </div>
-          <div class="comment-box">
-            <h3>Bさん</h3>
-            <div class="text-align-left">
-              <p>
-                コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。 </p>
-            </div>
-          </div>
-          <div class="comment-box">
-            <h3>Cさん</h3>
-            <div class="text-align-left">
-              <p>
-                コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。 </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 参加方法 -->
-      <section id="howtojoin">
-        <h2>参加方法</h2>
-        <div class="text-box">
-          <p class="text-medium mb-1">まずはSNSをフォロー！</p>
-          <p>あすなろの会の公式LINEを友達追加する、またはInstagram、Xをフォローすると、イベントのお知らせが届きます。日時等はお知らせ内に詳しくご案内します。お知らせ内のGoogle
-            フォームより参加をお申込みください。</p>
-        </div>
-
-      </section>
-      <!-- よくある質問 -->
-      <section id="faq">
-        <h2>よくある質問</h2>
-        <dl class="qa-8">
-          <dt>参加費用はどのくらいかかりますか？</dt>
-          <dd>イベントごとに費用を決めさせていただいておりますが、おおむね1,000円前後です。参加者へのおやつや、ちょっとしたギフト代になります。</dd>
-          <dt>入会金や会費はありますか？</dt>
-          <dd>入会金、会費はかかりません。</dd>
-          <dt>家族の付き添いはできますか？</dt>
-          <dd>ご家族の付き添いは可能です。<br>ご家族の方にも是非ご参加いただき、ご家族間の交流も自由です。</dd>
-          <dt>入退会は手続きが必要ですか？</dt>
-          <dd>入退会の手続きは行っていません。<br>イベントごとにアンケートで参加を募集するのみです。</dd>
-        </dl>
-      </section>
-
-      <!-- 問い合わせフォーム -->
-      <section id="contact">
-        <h2>お問い合わせ</h2>
-        <p class="mb-3">ご不明な点はお気軽にお問い合わせください。</p>
-        <div class="form01 mb-5">
-          <form action="usagitobi0908@gmail.com" method="post">
-            <div class="form-inner">
-              <div class="form-label">
-                <label for="name">お名前</label>
-                <span class="required">必須</span>
-              </div>
-              <div class="form-input">
-                <input type="text" id="name" name="name" autocomplete="name" required>
-              </div>
-            </div>
-            <div class="form-inner">
-              <div class="form-label">
-                <label for="email">メールアドレス</label>
-                <span class="required">必須</span>
-              </div>
-              <div class="form-input">
-                <input type="email" id="email" name="email" autocomplete="email" required>
-              </div>
-            </div>
-            <!-- <div class="form-inner">
-              <div class="form-label">
-                <label for="date">ご予約希望日</label>
-                <span class="required">必須</span>
-              </div>
-              <div class="form-input">
-                <input type="date" id="date" name="date" autocomplete="date" required>
-              </div>
-            </div>
-            <div class="form-inner">
-              <div class="form-label">
-                <label for="time">ご希望時間帯</label>
-              </div>
-              <div class="form-input">
-                <span class="radio-inner">
-                  <input type="radio" id="date-1" name="date-1">
-                  午前
-                </span>
-                <span class="radio-inner">
-                  <input type="radio" id="date-2" name="date-2">
-                  午後
-                </span>
-                <span class="radio-inner">
-                  <input type="radio" id="date-3" name="date-3">
-                  夕方
-                </span>
-              </div>
-            </div> -->
-            <div class="form-inner">
-              <div class="form-label">
-                <label for="details">お問い合わせ内容</label>
-              </div>
-              <div class="form-input">
-                <textarea id="details" name="details"></textarea>
-              </div>
-            </div>
-            <button type="submit" class="form-btn">送信する</button>
-          </form>
-        </div>
-      </section>
-      <!-- google-form -->
-      <section class="google-form">
-        <h2>Google Formによる<br>お問い合わせフォーム</h2>
-        <p>Google formを利用した場合のサンプルイメージです。</p>
-        <div class="google-form-inner">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfIjB7jKFBogiXpbh48Qchl4OhRjxajM99bfP2ziDY48WkhEQ/viewform?embedded=true"
-            width="640" height="684" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
-        </div>
-      </section>
-      <!-- アクセス -->
-      <section id="access">
-        <h2>Access</h2>
-        <div class="access-inner">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.831946129616!2d139.7644864755918!3d35.68113977258721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1763526856807!5m2!1sja!2sjp"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </section>
+  <section id="concept" class="concept">
+    <h2>Concept</h2>
+    <div class="concept-card">
+      <p>旅先でふと見つけたような、<br>心がほどける時間を。</p>
+      <img src="images/concept-img.jpg" alt="お店のイメージ">
     </div>
-  </main>
-  <!-- フッター -->
-  <footer>
-    <div class="footer-container">
-      <p class="footer-logo text-large">あすなろの会</p>
-      <table>
-        <tr>
-          <th>住所</th>
-          <td>＊＊＊＊＊</td>
-        </tr>
-        <tr>
-          <th>代表者</th>
-          <td>＊＊＊＊＊</td>
-        </tr>
-      </table>
-      <!-- フッターナビ -->
-      <nav class="nav">
-        <ul class="item">
-          <li class="list"><a href="index.html">Home</a></li>
-          <li class="list"><a href="#works">活動の紹介</a></li>
-          <li class="list"><a href="#voice">参加者の声</a></li>
-          <li class="list"><a href="#faq">よくある質問</a></li>
-          <li class="list"><a href="#howtojoin">参加方法</a></li>
-          <li class="list-contact"><a href="#contact">お問い合わせ</a></li>
-        </ul>
-      </nav>
-      <!-- SNS -->
-      <ul class="sns-list">
-        <li class="sns-links__item"><a href="https://www.instagram.com/asunarowebkobo/" target="_blank" rel="noopener">
-            <i class="fa-brands fa-instagram"></i>
-          </a></li>
-        <li class="sns-links__item">
-          <a href="https://x.com/KoboWeb68951" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-        </li>
-        <li class="sns-links__item">
-          <a href="https://lin.ee/kY6rThw" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-line"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="copyright"><small>&copy;2025 Sample Company</small></p>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>主なメニュー</h2>
+    <div class="menu-list">
+      <article class="menu-item">
+        <img src="images/menu/menu-drink.jpg" alt="drinks">
+        <h3>自家焙煎コーヒー</h3>
+        <p>香り高く、やさしい味わい。</p>
+      </article>
+      <article class="menu-item">
+        <img src="images/menu/menu-sweets.jpg" alt="sweets">
+        <h3>季節のスイーツ</h3>
+        <p>旬の果物をたっぷり使用。</p>
+      </article>
+      <article class="menu-item">
+        <img src="images/menu/menu-lunch.jpg" alt="lunch">
+        <h3>ランチメニュー</h3>
+        <p>ほっとする軽いランチ</p>
+      </article>
     </div>
+    <div class="sns">
+      <p>Instagramで最新のメニューやお店の情報を更新中です。<br>フォローはこちら</p>
+      <a href="https://www.instagram.com/asunarowebkobo/" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <small>※デモサイトのため、あすなろWEB工房のアカウントに遷移します</small>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>フォトギャラリー</h2>
+    <div class="gallery-grid">
+      <img src="images/gallery/gallery-1.jpg" alt="店内の様子">
+      <img src="images/gallery/gallery-2.jpg" alt="ショーケース">
+      <img src="images/gallery/gallery-3.jpg" alt="ショーケース">
+      <img src="images/gallery/gallery-4.jpg" alt="店内の様子">
+      <img src="images/gallery/gallery-5.jpg" alt="テーブルのイメージ">
+      <img src="images/gallery/gallery-6.jpg" alt="テーブルのイメージ">
+      <img src="images/gallery/gallery-7.jpg" alt="スイーツ">
+      <img src="images/gallery/gallery-8.jpg" alt="スイーツ">
+      <img src="images/gallery/gallery-9.jpg" alt="スイーツ">
+
+    </div>
+  </section>
+
+  <section id="info" class="info">
+    <h2>店舗情報</h2>
+    <p>〒000-0000 東京都○○区○○1-2-3</p>
+    <p>営業時間：10:00〜18:00（火曜定休）</p>
+    <p><a href="tel:000-0000-0000">TEL：000-0000-0000</a></p>
+    <div class="map">
+      <!-- Google Map 埋め込み -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8254544793112!2d139.7648771174439!3d35.6812996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1749710475119!5m2!1sja!2sjp"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="logo">Cafe Demo</div>
+    <a href="https://www.instagram.com/asunarowebkobo/" target="_blank" rel="noopener">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <p>© 2026 Cafe Demo</p>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('open');
+    });
+  </script>
 </body>
 
 </html>
